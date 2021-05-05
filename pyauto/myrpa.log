@@ -1,0 +1,248 @@
+INFO:root:Started : 20200620
+INFO:root:Started : 20200620
+INFO:root:Started : 20200620 144101
+INFO:root:Started : 20200620 144230
+INFO:root:실행을 종료합니다 <- error occured..
+INFO:root:Started : 20200620 14:43:06
+INFO:root:실행을 종료합니다 <- error occured..
+INFO:root:Started : 20200620 14:44:55
+INFO:root:Started : 20200620 14:48:51
+INFO:root:Started : 20200620 14:49:34
+INFO:root:실행을 종료합니다 <- error occured..20200620 14:49:36
+INFO:root:Started : 20200620 14:50:14
+INFO:root:img/goms_login3.png이미지 오류 <- error occured..20200620 14:50:55
+INFO:root:Started : 20200620 14:51:58
+INFO:root:실행을 종료합니다 ← error occured at..20200620 14:52:00
+INFO:root:Started : 20200620 14:52:50
+INFO:root:실행 취소합니다 ← error occured at..20200620 14:52:52
+INFO:root:Started : 20200622 09:31:21
+INFO:root:실행 취소합니다 ← error occured at..20200622 09:31:40
+INFO:root:Started : 20200622 09:32:04
+INFO:root:'RangeIndex' object is not callable ← error occured at..20200622 09:32:11
+INFO:root:Started : 20200622 09:32:30
+INFO:root:'RangeIndex' object is not callable ← error occured at..20200622 09:32:32
+INFO:root:Started : 20200622 09:39:33
+INFO:root:unsupported operand type(s) for &: 'int' and 'float' ← error occured at..20200622 09:39:35
+INFO:root:Started : 20200622 09:40:43
+INFO:root:unsupported operand type(s) for &: 'int' and 'float' ← error occured at..20200622 09:40:46
+INFO:root:Started : 20200622 09:46:06
+INFO:root:unsupported operand type(s) for &: 'int' and 'float' ← error occured at..20200622 09:46:07
+INFO:root:Started : 20200622 09:58:43
+INFO:root:Started : 20200622 10:00:06
+INFO:root:Started : 20200622 10:00:31
+INFO:root:Started : 20200622 10:01:06
+INFO:root:Started : 20200622 10:01:26
+INFO:root:Started : 20200622 10:03:09
+INFO:root:could not locate runnable browser ← error occured at..20200622 10:03:11
+INFO:root:Started : 20200622 10:07:21
+INFO:root:Started : 20200622 10:07:45
+INFO:root:Started : 20200622 10:19:14
+INFO:root:Started : 20200622 10:20:49
+INFO:root:name 'url' is not defined ← error occured at..20200622 10:20:51
+INFO:root:Started : 20200622 10:21:00
+INFO:root:Started : 20200622 10:21:35
+INFO:root:Started : 20200622 10:22:09
+INFO:root:Started : 20200622 10:22:26
+INFO:root:Started : 20200622 10:22:55
+INFO:root:Started : 20200622 10:24:18
+INFO:root:Started : 20200622 10:24:50
+INFO:root:could not locate runnable browser ← error occured at..20200622 10:24:52
+INFO:root:Started : 20200622 10:25:21
+INFO:root:Started : 20200622 10:25:53
+INFO:root:Started : 20200622 10:26:36
+INFO:root:Started : 20200622 10:35:05
+INFO:root:Started : 20200622 10:39:22
+INFO:root:Started : 20200622 16:37:49
+INFO:root:Finished : 20200622 16:37:57
+INFO:root:Started : 20200622 16:40:20
+INFO:root:Finished : 20200622 16:40:24
+INFO:root:Started : 20200622 16:40:24
+INFO:root:실행 취소합니다 ← error occured at..20200622 16:40:31
+INFO:root:Started : 20200622 16:40:47
+INFO:root:Finished : 20200622 16:40:50
+INFO:root:Started : 20200622 16:40:50
+INFO:root:Finished : 20200622 16:40:57
+INFO:root:Started : 20200622 16:40:57
+INFO:root:실행 취소합니다 ← error occured at..20200622 16:41:04
+INFO:root:Started : 20200622 16:42:05
+INFO:root:Finished : 20200622 16:42:08
+INFO:root:Started : 20200622 16:42:11
+INFO:root:Finished : 20200622 16:43:11
+INFO:root:Started : 20200622 16:43:14
+INFO:root:실행 취소합니다 ← error occured at..20200622 16:43:21
+INFO:root:Started : 20200622 16:47:28
+INFO:root:Finished : 20200622 16:47:35
+INFO:root:'MenuRepeat' ← error occured at..20200622 16:47:35
+INFO:root:Started : 20200622 16:49:04
+INFO:root:Finished : 20200622 16:49:10
+INFO:root:'MenuRepeat' ← error occured at..20200622 16:49:10
+INFO:root:Started : 20200622 16:49:36
+INFO:root:Finished : 20200622 16:49:41
+INFO:root:'MenuRepeat' ← error occured at..20200622 16:49:41
+INFO:root:Started : 20200622 16:50:05
+INFO:root:Finished : 20200622 16:50:10
+INFO:root:'MenuRepeat' ← error occured at..20200622 16:50:10
+INFO:root:Started : 20200622 16:51:29
+INFO:root:Finished : 20200622 16:51:33
+INFO:root:Started : 20200622 16:51:36
+INFO:root:실행 취소합니다 ← error occured at..20200622 16:51:45
+INFO:root:Started : 20200622 16:56:36
+INFO:root:Finished : 20200622 16:56:41
+INFO:root:Started : 20200622 16:56:44
+INFO:root:실행 취소합니다 ← error occured at..20200622 16:56:49
+INFO:root:Started : 20200622 18:06:38
+INFO:root:Finished : 20200622 18:07:29
+INFO:root:Started : 20200622 18:07:32
+INFO:root:Finished : 20200622 18:07:45
+INFO:root:Started : 20200622 18:07:48
+INFO:root:실행 취소합니다 ← error occured at..20200622 18:07:50
+INFO:root:Started : 20200622 19:48:23
+INFO:root:Finished : 20200622 19:48:30
+INFO:root:Started : 20200622 19:48:33
+INFO:root:Finished : 20200622 19:48:38
+INFO:root:Started : 20200622 19:48:41
+INFO:root:Finished : 20200622 19:48:52
+INFO:root:Started : 20200622 19:48:55
+INFO:root:실행 취소합니다 ← error occured at..20200622 19:49:00
+INFO:root:Started : 20200622 19:55:19
+INFO:root:Finished : 20200622 19:55:35
+INFO:root:Started : 20200622 19:55:38
+INFO:root:실행 취소합니다 ← error occured at..20200622 19:55:41
+INFO:root:Started : 20200622 19:56:43
+INFO:root:Finished : 20200622 19:56:59
+INFO:root:Started : 20200622 19:57:02
+INFO:root:Finished : 20200622 19:59:05
+INFO:root:Started : 20200622 19:59:08
+INFO:root:Finished : 20200622 20:04:38
+INFO:root:Started : 20200622 20:04:41
+INFO:root:Finished : 20200622 20:05:50
+INFO:root:Started : 20200622 20:05:53
+INFO:root:Finished : 20200622 20:07:37
+INFO:root:Started : 20200622 20:07:40
+INFO:root:Finished : 20200622 20:08:01
+INFO:root:Started : 20200622 20:08:04
+INFO:root:Finished : 20200622 20:08:38
+INFO:root:Started : 20200622 20:08:41
+INFO:root:Finished : 20200622 20:09:31
+INFO:root:Started : 20200622 20:09:34
+INFO:root:Finished : 20200622 20:10:58
+INFO:root:Started : 20200622 20:11:01
+INFO:root:실행 취소합니다 ← error occured at..20200622 20:11:45
+INFO:root:Started : 20200622 20:11:45
+INFO:root:실행 취소합니다 ← error occured at..20200622 20:11:47
+INFO:root:Started : 20200622 20:12:45
+INFO:root:Finished : 20200622 20:13:09
+INFO:root:Started : 20200622 20:13:12
+INFO:root:실행 취소합니다 ← error occured at..20200622 20:13:15
+INFO:root:Started : 20200622 20:39:33
+INFO:root:실행 취소합니다 ← error occured at..20200622 20:39:36
+INFO:root:Started : 20200622 20:39:55
+INFO:root:Finished : 20200622 20:40:05
+INFO:root:Started : 20200622 20:40:08
+INFO:root:실행 취소합니다 ← error occured at..20200622 20:40:11
+INFO:root:Started : 20200622 20:40:52
+INFO:root:Finished : 20200622 20:41:00
+INFO:root:Started : 20200622 20:41:03
+INFO:root:Finished : 20200622 20:41:11
+INFO:root:Started : 20200622 20:41:14
+INFO:root:실행 취소합니다 ← error occured at..20200622 20:42:16
+INFO:root:Started : 20200622 20:43:26
+INFO:root:Finished : 20200622 20:43:39
+INFO:root:Started : 20200622 20:43:42
+INFO:root:실행 취소합니다 ← error occured at..20200622 20:45:57
+INFO:root:Started : 20200622 20:57:31
+INFO:root:Finished : 20200622 20:57:38
+INFO:root:Started : 20200622 20:57:41
+INFO:root:Finished : 20200622 20:59:43
+INFO:root:Started : 20200622 20:59:46
+INFO:root:실행 취소합니다 ← error occured at..20200622 21:16:57
+INFO:root:Started : 20200623 12:23:37
+INFO:root:name 'imgstr' is not defined ← error occured at..20200623 12:23:48
+INFO:root:Started : 20200623 12:24:45
+INFO:root:fail to read image 5 - img/ibss_id.png
+INFO:root:fail to read image 5 - img/ibss_login.png
+INFO:root:img/ibss_login.png이미지 오류 ← error occured at..20200623 12:24:56
+INFO:root:Started : 20200623 12:26:58
+INFO:root:fail to read image 5 - img/ibss_id.png
+INFO:root:fail to read image 5 - img/ibss_pinfo.png
+INFO:root:fail to read image 5 - img/ibss_mlong.png
+INFO:root:Finished : 20200623 12:27:17
+INFO:root:Started : 20200623 12:27:20
+INFO:root:fail to read image 5 - img/ibss_id.png
+INFO:root:fail to read image 5 - img/ibss_mlong.png
+INFO:root:Finished : 20200623 12:28:23
+INFO:root:Started : 20200623 12:28:26
+INFO:root:실행 취소합니다 ← error occured at..20200623 12:28:28
+INFO:root:Started : 20200623 12:28:28
+INFO:root:실행 취소합니다 ← error occured at..20200623 12:28:31
+INFO:root:Started : 20200624 08:58:12
+INFO:root:fail to read image 5 - img/ibss_id.png
+INFO:root:fail to read image 5 - img/ibss_mlong.png
+INFO:root:Finished : 20200624 08:58:33
+INFO:root:Started : 20200624 08:58:36
+INFO:root:실행 취소합니다 ← error occured at..20200624 08:58:39
+INFO:root:Started : 20200624 15:35:32
+INFO:root:실행 취소합니다 ← error occured at..20200624 15:35:40
+INFO:root:Started : 20200624 15:37:01
+INFO:root:Finished : 20200624 15:37:03
+INFO:root:Started : 20200624 15:37:06
+INFO:root:Finished : 20200624 15:38:11
+INFO:root:Started : 20200624 15:38:14
+INFO:root:Finished : 20200624 15:38:16
+INFO:root:Started : 20200624 15:38:19
+INFO:root:실행 취소합니다 ← error occured at..20200624 15:38:22
+INFO:root:Started : 20200624 15:38:24
+INFO:root:Finished : 20200624 15:38:25
+INFO:root:Started : 20200624 15:38:28
+INFO:root:Finished : 20200624 15:38:30
+INFO:root:Started : 20200624 15:38:33
+INFO:root:실행 취소합니다 ← error occured at..20200624 15:38:35
+INFO:root:Started : 20200624 15:39:29
+INFO:root:Finished : 20200624 15:39:33
+INFO:root:Started : 20200624 15:39:36
+INFO:root:Finished : 20200624 15:40:11
+INFO:root:Started : 20200624 15:40:14
+INFO:root:Started : 20200624 16:01:53
+INFO:root:ufunc 'isnan' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe'' ← error occured at..20200624 16:02:32
+INFO:root:Started : 20200624 16:03:59
+INFO:root:ufunc 'isnan' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe'' ← error occured at..20200624 16:04:00
+INFO:root:Started : 20200624 16:04:26
+INFO:root:'RepeatCount' ← error occured at..20200624 16:04:28
+INFO:root:Started : 20200624 16:04:58
+INFO:root:'RepeatCount' ← error occured at..20200624 16:05:00
+INFO:root:Started : 20200624 16:05:36
+INFO:root:'RepeatCount' ← error occured at..20200624 16:05:38
+INFO:root:Started : 20200624 16:06:12
+INFO:root:'RepeatCount' ← error occured at..20200624 16:06:14
+INFO:root:Started : 20200624 16:08:41
+INFO:root:'RepeatCount' ← error occured at..20200624 16:08:43
+INFO:root:Started : 20200624 16:09:15
+INFO:root:'RepeatCount' ← error occured at..20200624 16:09:17
+INFO:root:Started : 20200624 16:09:53
+INFO:root:'numpy.float64' object has no attribute 'fillna' ← error occured at..20200624 16:09:54
+INFO:root:Started : 20200624 16:10:51
+INFO:root:'numpy.float64' object cannot be interpreted as an integer ← error occured at..20200624 16:10:52
+INFO:root:Started : 20200624 16:11:09
+INFO:root:Finished : 20200624 16:11:11
+INFO:root:Started : 20200624 16:11:14
+INFO:root:Finished : 20200624 16:11:19
+INFO:root:Started : 20200624 16:11:22
+INFO:root:Finished : 20200624 16:11:55
+INFO:root:Started : 20200624 16:11:58
+INFO:root:실행 취소합니다 ← error occured at..20200624 16:12:03
+INFO:root:Started : 20200624 16:12:03
+INFO:root:실행 취소합니다 ← error occured at..20200624 16:12:04
+INFO:root:Started : 20200624 16:12:11
+INFO:root:Finished : 20200624 16:12:15
+INFO:root:Started : 20200624 16:12:18
+INFO:root:실행 취소합니다 ← error occured at..20200624 16:12:21
+INFO:root:Started : 20200624 16:12:47
+INFO:root:Finished : 20200624 16:12:49
+INFO:root:Started : 20200624 16:12:52
+INFO:root:실행 취소합니다 ← error occured at..20200624 16:12:54
+INFO:root:Started : 20200624 16:15:00
+INFO:root:Started : 20200624 16:15:03
+INFO:root:실행 취소합니다 ← error occured at..20200624 16:15:08
+INFO:root:Started : 20200624 16:15:17
+INFO:root:Started : 20200624 16:15:22
+INFO:root:실행 취소합니다 ← error occured at..20200624 16:15:25
