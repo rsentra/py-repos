@@ -8,9 +8,11 @@ GROUP2= ('글래드조은',     '글래드상동',  '글래드피스토스', '�
          '글래드제이엔제이', '씨티엠지점','글래드시흥'
         )
 
-#메트로 코드 오류 보정
+
 import pandas as pd
 def Metro(brh,j_brh,team):
+    """ 메트로 코드 오류 보정 """
+  
     if pd.isnull(team): team='00'
     if pd.isnull(j_brh): j_brh='00'
     if '시흥' in (j_brh):          return '글래드시흥'
@@ -20,9 +22,10 @@ def Metro(brh,j_brh,team):
     elif '제이엔제이' in (j_brh):  return '글래드제이엔제이'
     else: return brh
 
-#1. 메트로 코드 분리.  2. 직영,지사구분값 (colNm에 생성)
+
 def BrhConv(dfC,colNm):
-    #---메트로 코드 분리
+    """ 메트로 코드 분리.  2. 직영,지사구분값 (colNm에 생성) """
+  
     dfC['지점'].fillna('글래드', inplace=True)  #결측치 보정
     dfC['지점'] = dfC.apply(lambda x: fcConv(x['지점'], x['사원번호'], x['계약일자']), axis=1)	
     dfC['변환지점'] = dfC.apply(lambda x: Metro(x['지점'], x['직할지점'], x['팀']), axis=1)
@@ -31,8 +34,8 @@ def BrhConv(dfC,colNm):
     dfC[colNm] = dfC.지점.map(lambda x: '지사'  if x in GROUP2 else ('직영' if x in GROUP1 else '오류'))
     return dfC
 
-# 직영/지사 구분
 def grpConv(dfC,colNm):
+    '''  직영/지사 구분 '''
     dfC['지점'].fillna('글래드', inplace=True)  #결측치 보정
     # mp,엠피로 된 명칭을 글래드로 변경
     dfC['지점'] = dfC['지점'].str.replace('MP','글래드')
@@ -41,8 +44,8 @@ def grpConv(dfC,colNm):
     dfC[colNm] = dfC.지점.map(lambda x: '지사'  if x in GROUP2 else ('직영' if x in GROUP1 else '오류'))
     return dfC
 
-#김묘정 송내,메트로 구분
 def fcConv(brh,fcCode,cDate):
+    ''' 김묘정 송내,메트로 구분 '''
     res=brh
     if fcCode == 'MPK806143004':
         if  cDate < '20200701':
@@ -50,9 +53,18 @@ def fcConv(brh,fcCode,cDate):
         else: res='글래드'
     return res
 
-'''
-str='글래드아이리치'
-if str in GROUP1: print('직영')
-elif str in GROUP2: print('직사')
-else: print('err')
-'''
+    '''
+    str='글래드아이리치'
+    if str in GROUP1: print('직영')
+    elif str in GROUP2: print('직사')
+    else: print('err')
+    '''
+
+def convertByVal(val, conv_dict):
+   """ 
+   val에 해당하는 key가 dict에 있으면 변환하여 return 
+   """
+   if val in conv_dict.keys():
+       return conv_dict[val]
+   else:
+       return val
