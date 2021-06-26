@@ -69,10 +69,11 @@ def fcConv(brh,fcCode,cDate):
     '''
 
 def convertByVal(val, conv_dict):
-   """ 
-   val에 해당하는 key가 dict에 있으면 변환하여 return 
-   """
-   if val in conv_dict.keys():
-       return conv_dict[val]
-   else:
-       return val
+    """ 
+    val에 해당하는 key가 dict에 있으면 변환하여 return 
+    """
+#    if val in conv_dict.keys():
+#        return conv_dict[val]
+#    else:
+#        return val
+    return conv_dict.get(val, val)
