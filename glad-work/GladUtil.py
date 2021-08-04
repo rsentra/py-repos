@@ -8,6 +8,10 @@ GROUP2= ('글래드조은',     '글래드상동',  '글래드피스토스', '�
          '글래드제이엔제이', '글래드씨티엠','글래드시흥'
         )
 
+씨티엠사원 = ['GLD809183018','GLD809183012','GLD809183029','GLD809183011','GLD809183035','GLD809183013']
+시흥사원 = ['GLD101173004','GLD809193030']
+
+
 
 import pandas as pd
 def Metro(brh,j_brh,team):
@@ -53,12 +57,18 @@ def grpConv2(dfC,colNm):
 
 
 def fcConv(brh,fcCode,cDate):
-    ''' 김묘정 송내,메트로 구분 '''
+    ''' 김묘정 송내,메트로 구분/ 글래드소속중 타 지점 사원 '''
     res = brh
     if fcCode in (['GLD806143004','MPK806143004']):
         if  cDate < '20200701':
               res = '글래드송내'
         else: res = '글래드'
+    
+    if res == '글래드':
+        if fcCode in 씨티엠사원:
+            res = '글래드씨티엠'
+        elif fcCode in 시흥사원:    
+            res = '글래드시흥'
     return res
 
     '''
