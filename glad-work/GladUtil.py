@@ -11,7 +11,9 @@ GROUP2= ('글래드조은',     '글래드상동',  '글래드피스토스', '�
 씨티엠사원 = ['GLD809183018','GLD809183012','GLD809183029','GLD809183011','GLD809183035','GLD809183013']
 시흥사원 = ['GLD101173004','GLD809193030']
 
-
+공동지점 = ['글래드','글래드가온','글래드경기','글래드HL','글래드라온','글래드방이','글래드시흥',
+          '글래드상동','글래드성공','글래드송내','글래드시흥','글래드아이리치','글래드조은',
+          '글래드프라임','글래드피스토스']
 
 import pandas as pd
 def Metro(brh,j_brh,team):
@@ -87,3 +89,15 @@ def convertByVal(val, conv_dict):
 #    else:
 #        return val
     return conv_dict.get(val, val)
+
+def Share_Proc(df, gb, head_nm):
+    ''' mp와 공동정산 대상여부 판단
+         head_nm에 포함된 keyword가 지점 컬럼에 있으면 무조건 포함
+    '''
+    if gb == '공동':
+        df = df[ df.지점.isin(공동지점) |  df.지점.str.contains(head_nm,case=False) ]
+        df = df[( ~(df.지점=='글래드프라임') | (df.사원.isin(['이상희','송승환','허윤경'])) ) ]
+    else:  #공동지점 아닌 지점(직영)만
+        df = df[ ~df.지점.isin(공동지점) | df.지점.str.contains(head_nm,case=False)  | 
+                 ( (df.지점=='글래드프라임') & (~df.사원.isin(['이상희','송승환','허윤경'])) )]
+    return df
