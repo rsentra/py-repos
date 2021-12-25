@@ -91,13 +91,42 @@ def convertByVal(val, conv_dict):
     return conv_dict.get(val, val)
 
 def Share_Proc(df, gb, head_nm):
-    ''' mp와 공동정산 대상여부 판단
-         head_nm에 포함된 keyword가 지점 컬럼에 있으면 무조건 포함
+    ''' 본사시상 추출할때 사용하는 함수로서 mp와 공동정산 대상여부 판단
+        head_nm에 포함된 keyword가 지점 컬럼에 있으면 무조건 포함
+        사원명에 추가되거나 명칭이 변경되면 수정이 필요함
     '''
+    chg = False
+    if '담당' in df.columns and '사원' not in df.columns:
+        df = df.rename(columns={"담당":"사원"})
+        chg = True
+
+    # if gb == '공동':
+    #     df = df[ df.지점.isin(공동지점) |  df.지점.str.contains(head_nm,case=False) ]           #공동지점임 
+    #     df = df[( ~(df.지점=='글래드프라임') | (df.사원.isin(['이상희','송승환','허윤경'])) ) ]   #프라임아님 or 프라임 3명  
+    #     df = df[~((df.지점=='글래드송내') & (df.담당.isin(['황순정'])))]                         #송내 3팀 아닌 위 전체
+    # else:  #직영 (not 공동)
+    #     df = df[ ~df.지점.isin(공동지점) | df.지점.str.contains(head_nm,case=False)  |           # not 공동지점  or
+    #              ( (df.지점=='글래드프라임') & (~df.사원.isin(['이상희','송승환','허윤경'])) ) |  #프라임 3명 제외 or
+    #              ( (df.지점=='글래드송내') & (~df.담당.isin(['황순정'])) ) ]                     #송내 3팀 포함
+    # return df
+  
+    prime_sa = ["이상희","송승환","허윤경"]
+    song3_sa = ['황순정']
+
     if gb == '공동':
-        df = df[ df.지점.isin(공동지점) |  df.지점.str.contains(head_nm,case=False) ]
-        df = df[( ~(df.지점=='글래드프라임') | (df.사원.isin(['이상희','송승환','허윤경'])) ) ]
-    else:  #공동지점 아닌 지점(직영)만
-        df = df[ ~df.지점.isin(공동지점) | df.지점.str.contains(head_nm,case=False)  | 
-                 ( (df.지점=='글래드프라임') & (~df.사원.isin(['이상희','송승환','허윤경'])) )]
+        str_exp = ' (지점 in @공동지점 or 지점==@head_nm) '
+        df = df.query(str_exp)
+        str_exp = ' (지점!="글래드프라임" or 사원 in @prime_sa) '
+        df = df.query(str_exp)
+        str_exp = ' (사원 not in @song3_sa) '
+        df = df.query(str_exp)
+    else:
+         str_exp = '( 지점 not in @공동지점 or 지점==@head_nm or (지점=="글래드프라임" and 사원 not in @prime_sa) or 사원 in @song3_sa )'
+         df = df.query(str_exp)
+    
+    if chg:
+       df = df.rename(columns={"사원":"담당"})
+
     return df
+
+
