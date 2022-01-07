@@ -114,14 +114,14 @@ def Share_Proc(df, gb, head_nm):
     song3_sa = ['황순정']
 
     if gb == '공동':
-        str_exp = ' (지점 in @공동지점 or 지점==@head_nm) '
+        str_exp = ' (지점 in @공동지점 or 지점.str.contains(@head_nm)) '
         df = df.query(str_exp)
         str_exp = ' (지점!="글래드프라임" or 사원 in @prime_sa) '
         df = df.query(str_exp)
         str_exp = ' (사원 not in @song3_sa) '
         df = df.query(str_exp)
     else:
-         str_exp = '( 지점 not in @공동지점 or 지점==@head_nm or (지점=="글래드프라임" and 사원 not in @prime_sa) or 사원 in @song3_sa )'
+         str_exp = '( 지점 not in @공동지점 or 지점.str.contains(@head_nm) or (지점=="글래드프라임" and 사원 not in @prime_sa) or 사원 in @song3_sa )'
          df = df.query(str_exp)
     
     if chg:
