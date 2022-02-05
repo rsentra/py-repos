@@ -115,14 +115,14 @@ def Share_Proc(df, gb, head_nm):
 
     if gb == '공동':
         str_exp = ' (지점 in @공동지점 or 지점.str.contains(@head_nm)) '
-        df = df.query(str_exp)
+        df = df.query(str_exp, engine='python')
         str_exp = ' (지점!="글래드프라임" or 사원 in @prime_sa) '
-        df = df.query(str_exp)
+        df = df.query(str_exp, engine='python')
         str_exp = ' (사원 not in @song3_sa) '
-        df = df.query(str_exp)
+        df = df.query(str_exp, engine='python')
     else:
          str_exp = '( 지점 not in @공동지점 or 지점.str.contains(@head_nm) or (지점=="글래드프라임" and 사원 not in @prime_sa) or 사원 in @song3_sa )'
-         df = df.query(str_exp)
+         df = df.query(str_exp, engine='python')
     
     if chg:
        df = df.rename(columns={"사원":"담당"})
