@@ -53,7 +53,7 @@ def grpConv2(dfC,colNm):
     '''  직영/지사 구분 '''
     dfC.loc[:,'지점'].fillna('글래드', inplace=True)  #결측치 보정
     # mp,엠피로 된 명칭을 글래드로 변경
-    dfC.loc[:,'지점'] = dfC['지점'].str.replace('MP|엠피','글래드')
+    dfC.loc[:,'지점'] = dfC['지점'].str.replace('MP|엠피','글래드',regex=True)
     dfC.loc[:, colNm] = dfC.지점.map(lambda x: '지사'  if x in GROUP2 else ('직영' if x in GROUP1 else '오류'))
     return dfC
 
