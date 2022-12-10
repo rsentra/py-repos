@@ -100,33 +100,28 @@ def Share_Proc(df, gb, head_nm):
         df = df.rename(columns={"담당":"사원"})
         chg = True
 
-    # if gb == '공동':
-    #     df = df[ df.지점.isin(공동지점) |  df.지점.str.contains(head_nm,case=False) ]           #공동지점임 
-    #     df = df[( ~(df.지점=='글래드프라임') | (df.사원.isin(['이상희','송승환','허윤경'])) ) ]   #프라임아님 or 프라임 3명  
-    #     df = df[~((df.지점=='글래드송내') & (df.담당.isin(['황순정'])))]                         #송내 3팀 아닌 위 전체
-    # else:  #직영 (not 공동)
-    #     df = df[ ~df.지점.isin(공동지점) | df.지점.str.contains(head_nm,case=False)  |           # not 공동지점  or
-    #              ( (df.지점=='글래드프라임') & (~df.사원.isin(['이상희','송승환','허윤경'])) ) |  #프라임 3명 제외 or
-    #              ( (df.지점=='글래드송내') & (~df.담당.isin(['황순정'])) ) ]                     #송내 3팀 포함
-    # return df
-  
-    prime_sa = ["이상희","송승환","허윤경"]
-    song3_sa = ['황순정']
+    # 공동지점중 정산대상 사원
+    include_sa = ["글래드프라임이상희","글래드프라임송승환","글래드프라임허윤경"]
+    # 공동지점중 비정산대상 사원
+    exclude_sa = ['글래드송내황순정','글래드성공이순연','글래드라온박종철']
+
+    df['temp_xx'] =  df['지점']+df['사원']
 
     if gb == '공동':
+        # 공동지점 = 공동지점.remove('글래드프라임')
         str_exp = ' (지점 in @공동지점 or 지점.str.contains(@head_nm)) '
         df = df.query(str_exp, engine='python')
-        str_exp = ' (지점!="글래드프라임" or 사원 in @prime_sa) '
-        df = df.query(str_exp, engine='python')
-        str_exp = ' (사원 not in @song3_sa) '
-        df = df.query(str_exp, engine='python')
+
+        df = df[ (df['지점']!='글래드프라임') | (df['temp_xx'].isin(include_sa)) ]
+        df = df[~df['temp_xx'].isin(exclude_sa)]
     else:
-         str_exp = '( 지점 not in @공동지점 or 지점.str.contains(@head_nm) or (지점=="글래드프라임" and 사원 not in @prime_sa) or 사원 in @song3_sa )'
-         df = df.query(str_exp, engine='python')
+        str_exp = ' ( 지점 not in @공동지점 or 지점.str.contains(@head_nm) or \
+            (지점=="글래드프라임" and temp_xx not in @include_sa) or temp_xx in @exclude_sa )'
+        df = df.query(str_exp, engine='python')
     
     if chg:
        df = df.rename(columns={"사원":"담당"})
 
-    return df
+    return df.drop(columns='temp_xx')
 
 
