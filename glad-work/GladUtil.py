@@ -59,13 +59,21 @@ def grpConv2(dfC,colNm):
 
 
 def fcConv(brh,fcCode,cDate):
-    ''' 김묘정 송내,메트로 구분/ 글래드소속중 타 지점 사원 '''
+    ''' 김묘정 송내,메트로 구분/ 글래드소속중 타 지점 사원, '''
     res = brh
-    if fcCode in (['GLD806143004','MPK806143004']):
+    if fcCode in (['GLD806143004','MPK806143004']): #김묘정
         if  cDate < '20200701':
               res = '글래드송내'
         else: res = '글래드'
-    
+        
+    if fcCode in (['GLD713223001']): #한명실
+        if  cDate < '20230401':  
+             res = '글래드성공'
+                
+    if fcCode in (['GLD809183012']):  #박윤희
+        if  cDate < '20230101':  
+             res = '글래드씨티엠'
+                
     if res == '글래드':
         if fcCode in 씨티엠사원:
             res = '글래드씨티엠'
@@ -120,7 +128,7 @@ def Share_Proc(df, gb, head_nm):
         df = df.query(str_exp, engine='python')
     
     if chg:
-       df = df.rename(columns={"사원":"담당"})
+        df = df.rename(columns={"사원":"담당"})
 
     return df.drop(columns='temp_xx')
 
