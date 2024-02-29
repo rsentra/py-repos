@@ -1,0 +1,7 @@
+langchain
+pandasai
+python-dotenv
+langchain_openai
+sentence-transformers
+faiss-cpu
+langchainhub
