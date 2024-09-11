@@ -3,11 +3,15 @@ __pycache__/
 Tutorial/
 glad-web/
 lib/
+.chroma/
+.vscode/
 testData/
+articles/
 **/*.xlsx
 **/*.csv
 **/*.html
 **/*.png
+**/*.jpg
 **/*.tif
 **/*.pdf
 **/.ipynb_checkpoints/
