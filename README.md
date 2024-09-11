@@ -1,3 +1,14 @@
-## early python source..  
-  1.python,pandas,crawling,pyauto,openpyxl  
-  2.for glad management   
+## python source..  ##
+1. example
+  - openpyxl  
+  - pandas   
+  - crawling    
+  - pyauto  
+  - docs  
+  - llm  
+  - mypkgs  
+
+2. use case  
+  - glad-work  
+ 
+
