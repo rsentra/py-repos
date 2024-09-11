@@ -1,9 +1,0 @@
-streamlit
-streamlit-option-menu
-streamlit-extras
-cx_Oracle
-langchain
-tiktoken
-faiss_vector
-pandas
-numpy
