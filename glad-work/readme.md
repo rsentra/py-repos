@@ -1,1 +1,3 @@
-glad관련 스크립트
+python scripts related with glad insurance co.,
+
+
